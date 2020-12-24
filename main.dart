@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
-import 'package:path_provider/path_provider.dart';
+//import 'package:path_provider/path_provider.dart';
 
 void main() {
   runApp(SantaMaker());
@@ -84,8 +84,8 @@ class _SantaMakerState extends State<SantaMaker> {
                   bottom: 20,
                   child: FloatingActionButton(
                     onPressed: () async {
-                      Directory tempDir = await getTemporaryDirectory();
-                      String tempPath = tempDir.path;
+                      //Directory tempDir = await getTemporaryDirectory();
+                      //String tempPath = tempDir.path;
 
                       String fileName = DateTime.now().toIso8601String();
                       var path = '/sdcard/DCIM/$fileName.png';
@@ -103,7 +103,7 @@ class _SantaMakerState extends State<SantaMaker> {
                     backgroundColor: Color.fromRGBO(225, 50, 40, 1),
                     child: Icon(Icons.camera_alt),
                   ),
-                ), // This trailing comma makes auto-formatting nicer for build methods.
+                ), 
               ],
             ),
           ),
