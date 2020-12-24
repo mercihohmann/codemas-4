@@ -30,7 +30,7 @@ dependencies:
   carousel_slider: ^2.3.1
   screenshot: ^0.2.0
   image_gallery_saver: ^1.6.7
-  path_provider: ^1.6.24
+  #path_provider: ^1.6.24
 
 dev_dependencies:
   flutter_test:
